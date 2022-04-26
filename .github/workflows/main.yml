@@ -38,4 +38,4 @@ jobs:
           
   build-external-job:
     uses: mmartinezespichan/independent-project-a/.github/workflows/main.yml@main
-    if: steps.build.outcome == 'success'
+    if: build.steps.build.outcome == 'success'
