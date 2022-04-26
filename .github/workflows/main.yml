@@ -36,4 +36,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - uses: mmartinezespichan/independent-project-a/.github/workflows/main.yml@main
+  build-external-job:
+    needs: build
+    uses: mmartinezespichan/independent-project-a/.github/workflows/main.yml@main
