@@ -38,7 +38,7 @@ jobs:
           
   build-external-job:
       # The type of runner that the job will run on
-    uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
+    uses: mmartinezespichan/independent-project-a/.github/workflows/main.yml@main
     with:
        username: mona
        if: steps.build.outcome == 'success'
