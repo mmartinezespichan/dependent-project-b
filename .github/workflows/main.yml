@@ -37,8 +37,5 @@ jobs:
           echo test, and deploy your project.
           
   build-external-job:
-      # The type of runner that the job will run on
     uses: mmartinezespichan/independent-project-a/.github/workflows/main.yml@main
-    with:
-       username: mona
-       if: steps.build.outcome == 'success'
+    if: steps.build.outcome == 'success'
